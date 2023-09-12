@@ -15,9 +15,4 @@ models:
           - name: id
             description: "The primary key for this table"
 
-    - name: fake_model
-      description: "just some fake model"
-      columns:
-        - name: id
-          description: "whatever"
 
