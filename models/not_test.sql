@@ -1,8 +1,6 @@
 {{
 config(
     snowflake_warehouse = 'analytics',
-    target_lag = target_lag_environment(),
-    on_configuration_change = 'apply',
 )
 }}
 
