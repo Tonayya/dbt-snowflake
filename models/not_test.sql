@@ -1,6 +1,6 @@
 {{
 config(
-    snowflake_warehouse = 'ANALYTICS-LARGE',
+    snowflake_warehouse = "ANALYTICS-LARGE",
 )
 }}
 
