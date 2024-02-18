@@ -1,3 +1,10 @@
+{{
+config(
+    snowflake_warehouse = 'ANALYTICS-LARGE',
+)
+}}
+
+
 with
     customer_orders as (
         select id as order_id, min(order_date) as first_order_date
