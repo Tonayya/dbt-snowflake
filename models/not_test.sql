@@ -1,9 +1,10 @@
 {{
 config(
-    snowflake_warehouse = "REPORTING",
+    snowflake_warehouse = 'analytics',
+    target_lag = target_lag_environment(),
+    on_configuration_change = 'apply',
 )
 }}
-
 
 with
     customer_orders as (
