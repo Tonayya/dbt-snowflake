@@ -36,8 +36,8 @@ models:
   my_new_project:
     materialized: table
 
+
 snapshots:
   +transient: false
 
-seeds:
-  +database: development
+
