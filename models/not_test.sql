@@ -1,6 +1,6 @@
 {{
 config(
-    snowflake_warehouse = 'analytics',
+    snowflake_warehouse = {{ env_var('DBT_SNOWFLAKE_WAREHOUSE') }},
 )
 }}
 
