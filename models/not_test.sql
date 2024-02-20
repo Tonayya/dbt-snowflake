@@ -1,7 +1,7 @@
 {{
-config(
-    snowflake_warehouse = "{{ env_var('DBT_SNOWFLAKE_WAREHOUSE') }}",
-)
+    config(
+        snowflake_warehouse= env_var("DBT_SNOWFLAKE_WAREHOUSE"),
+    )
 }}
 
 with
