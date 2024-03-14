@@ -6,7 +6,17 @@ sources:
     schema: jaffle_shop  
     tables:
       - name: orders
+        columns:
+         - name: id
+           description: Primary key of the orders table
+           tests:
+            - unique
+            - not_null
+         - name: status
+           description: Note that the status can change over time
+
       - name: customers
+
 
   - name: stripe
     tables:
