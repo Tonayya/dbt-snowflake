@@ -33,7 +33,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 models:
   +transient: false
-  my_new_project:
+  analytics:
     materialized: table
 
 
