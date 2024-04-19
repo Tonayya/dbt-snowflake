@@ -1,7 +1,9 @@
-{%- call statement('st') -%}
+-- depends_on: {{ ref('abc') }}
 
-    select 2 as c
+{% call statement('st') %}
 
-{%- endcall -%}
+    select * from {{ ref('abc') }}
 
-select 1 as c
+{% endcall %}
+
+select 2 as id
