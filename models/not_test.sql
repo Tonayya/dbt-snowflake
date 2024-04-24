@@ -1,9 +1,3 @@
-{{
-    config(
-        snowflake_warehouse= env_var("DBT_SNOWFLAKE_WAREHOUSE"),
-    )
-}}
-
 with
     customer_orders as (
         select id as order_id, min(order_date) as first_order_date
