@@ -35,5 +35,8 @@ models:
   analytics:
     materialized: table
 
+    staging:
+      +schema: dbt_jyeo
+
 
 

@@ -1,0 +1,1 @@
+{{ codegen.generate_source(schema_name= 'not_schema', database_name= 'analytics') }}
