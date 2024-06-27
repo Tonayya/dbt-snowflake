@@ -1,6 +1,8 @@
 version: 2
 
 models:
+  - name: abc
+    description: bla bla
   - name: foo
     access: public
     description: testing stuff
