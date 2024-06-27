@@ -34,9 +34,11 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   analytics:
     materialized: table
+    +persist_docs:
+      relation: true
+      columns: true
 
-    staging:
-      +schema: dbt_jyeo
+
 
 
 
