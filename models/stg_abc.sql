@@ -1,3 +1,6 @@
+{{ config(
+    tags=["something"]
+) }}
 WITH
 source AS (
 SELECT DISTINCT
@@ -5,5 +8,3 @@ SELECT DISTINCT
 FROM {{ ref('raw_users') }}
 )
 SELECT * FROM source
-
-tags: ['something']
