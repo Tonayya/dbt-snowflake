@@ -1,0 +1,1 @@
+{{ codegen.generate_source(schema_name= 'oe', database_name= 'analytics', generate_columns = 'true') }}
