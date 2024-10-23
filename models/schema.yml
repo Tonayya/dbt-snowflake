@@ -6,3 +6,8 @@ models:
   - name: foo
     access: public
     description: testing stuff
+
+  - name: incremental
+    config:
+      materialized: incremental
+      incremental_strategy: merge
