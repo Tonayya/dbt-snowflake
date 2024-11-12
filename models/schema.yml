@@ -11,3 +11,6 @@ models:
     config:
       materialized: incremental
       incremental_strategy: merge
+
+  - name: public_model
+    access: public
