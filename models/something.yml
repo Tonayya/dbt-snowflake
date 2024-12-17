@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: dim_cc_release_dates
+    description: Details about waves and their process and release dates.
+    config:
+      meta:
+        owner: "tnt-ii"
+    columns:
+      - name: release_wave
+        description: '{{ doc("_doc_stg_control_center__release_wave") }}'
+      - name: process_date
+        description: '{{ doc("_doc_stg_control_center__process_date") }}'
+      - name: release_date
+        description: '{{ doc("_doc_stg_control_center__release_date") }}'
