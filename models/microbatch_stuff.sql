@@ -7,3 +7,5 @@
 ) }}
 
 select * from {{ ref('purchases') }}
+
+--bla
