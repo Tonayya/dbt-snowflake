@@ -1,6 +1,9 @@
 version: 2
 
 models:
+  - name: purchases
+    config:
+      event_time: date
   - name: abc
     description: bla bla
     meta:
