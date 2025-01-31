@@ -10,10 +10,6 @@ models:
   - name: foo
     access: public
     description: testing stuff
-    data_tests:
-      - some_test:
-        name: some_test
-        severity: warn
 
   - name: incremental
     config:
