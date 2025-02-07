@@ -8,4 +8,4 @@
 
 select * from {{ ref('purchases') }}
 
---stuff
+--whatever stuff
