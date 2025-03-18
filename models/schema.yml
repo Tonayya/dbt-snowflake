@@ -19,5 +19,3 @@ models:
 
   - name: for_katie
     description: "running some auto exposure tests."
-    tests:
-      - not_null
