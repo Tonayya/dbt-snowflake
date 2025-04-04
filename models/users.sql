@@ -5,5 +5,3 @@
 }}
 
 select 1 id
--- whatever
--- whatever more
