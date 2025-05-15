@@ -20,4 +20,4 @@
         {% do log('PR schema ' ~ schema_to_drop ~ ' dropped.', info=True) %}
     {% endif %}
 {% endmacro %}
--- new changes
+-- some extra change still bla bla
