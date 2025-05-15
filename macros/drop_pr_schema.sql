@@ -20,3 +20,4 @@
         {% do log('PR schema ' ~ schema_to_drop ~ ' dropped.', info=True) %}
     {% endif %}
 {% endmacro %}
+--comment
