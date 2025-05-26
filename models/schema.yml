@@ -10,9 +10,6 @@ models:
       joins:
         - join: foo
         - join: incremental
-  - name: foo
-    access: public
-    description: testing stuff
 
   - name: public_model
     access: public
