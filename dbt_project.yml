@@ -42,7 +42,6 @@ models:
 flags:
   warn_error_options:
     silence:
-      - PropertyMovedToConfigDeprecation
-      - ConfigDataPathDeprecation
+      - Deprecations
 
 
