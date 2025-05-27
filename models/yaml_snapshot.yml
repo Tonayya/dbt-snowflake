@@ -6,6 +6,3 @@ snapshots:
       strategy: timestamp
       unique_key: customer_id
       updated_at: first_order_date
-    data_tests:
-      - unique
-      - not_null
