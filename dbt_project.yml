@@ -39,7 +39,12 @@ models:
       relation: true
       columns: true
 
-
+flags:
+  warn_error_options:
+    error: # Previously called "include"
+    warn: # Previously called "exclude"
+    silence: # To silence or ignore warnings
+      - PropertyMovedToConfigDeprecation
 
 
 
