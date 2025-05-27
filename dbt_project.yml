@@ -44,7 +44,7 @@ flags:
     error: # Previously called "include"
     warn: # Previously called "exclude"
     silence: # To silence or ignore warnings
-      - PropertyMovedToConfigDeprecation
+      - all
 
 
 
