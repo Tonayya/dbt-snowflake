@@ -15,7 +15,7 @@ profile: 'default'
 model-paths: ["models"]
 analysis-paths: ["analyses"]
 test-paths: ["tests"]
-seed-paths: ["seeds"]
+data-paths: ["seeds"]
 macro-paths: ["macros"]
 snapshot-paths: ["snapshots"]
 
@@ -41,10 +41,7 @@ models:
 
 flags:
   warn_error_options:
-    error: # Previously called "include"
-    warn: # Previously called "exclude"
-    silence: # To silence or ignore warnings
-      - all
-
+    silence:
+      - PropertyMovedToConfigDeprecation
 
 
