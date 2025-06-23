@@ -1,1 +1,1 @@
-select * from {{ source('jaffle_shop', 'abc') }}
+select * from {{ source('dbt_tonayya', 'abc') }}
