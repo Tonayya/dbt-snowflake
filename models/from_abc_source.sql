@@ -1,1 +1,1 @@
-select * from {{ source('analytics', 'abc') }}
+select * from {{ source('dbt_tonayya', 'abc') }}
