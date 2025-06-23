@@ -1,8 +1,0 @@
-snapshots:
-  - name: my_snapshot
-    relation: ref('not_test')
-    description:  whatever
-    config:
-      strategy: timestamp
-      unique_key: customer_id
-      updated_at: first_order_date
