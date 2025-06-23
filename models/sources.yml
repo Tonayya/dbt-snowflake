@@ -1,7 +1,7 @@
 version: 2
 
 sources:
-  - name: dbt_tonayya
+  - name: DBT_TONAYYA
     database: analytics
     tables:
       - name: abc
