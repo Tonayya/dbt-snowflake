@@ -1,9 +1,0 @@
-version: 2
-
-sources:
-  - name: DBT_TONAYYA
-    database: analytics
-    tables:
-      - name: abc
-        columns:
-          - name: id

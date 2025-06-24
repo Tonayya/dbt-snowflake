@@ -1,1 +1,0 @@
-select * from {{ source('DBT_TONAYYA', 'abc') }}
