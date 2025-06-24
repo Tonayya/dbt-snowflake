@@ -5,3 +5,8 @@ sources:
     database: analytics
     tables:
       - name: model_a
+
+models:
+  - name: model_a
+    config:
+      alias: aliased_model_a
