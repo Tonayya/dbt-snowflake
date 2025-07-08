@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: model_a
+    latest_version: 1
+    config:
+      materialized: table
+      alias: aliased_model_a
+    columns:
+      - name: id
+    versions:
+      - v: 1
+      #same same
+      - v: 2
+        columns:
+          - name: another_id
+#changes
