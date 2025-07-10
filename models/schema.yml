@@ -8,6 +8,7 @@ models:
       alias: aliased_model_a
     columns:
       - name: id
+        description: bla
     versions:
       - v: 1
       #same same
