@@ -2,7 +2,7 @@ version: 2
 sources:
 - name: uploads
   database: ANALYTICS
-  schema: DBT_TONAYYA
+  schema: DBT_SL
   tables:
   - name: tblworkingdeposits_csv
     columns:
