@@ -1,1 +1,2 @@
-/macros/
+dbt_packages/
+macros/
