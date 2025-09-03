@@ -1,4 +1,6 @@
 cli-venv/
+core-venv/
 target/
 dbt_packages/
+dbt_internal_packages/
 logs/
