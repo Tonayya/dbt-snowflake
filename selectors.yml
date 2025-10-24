@@ -1,0 +1,7 @@
+selectors:
+  - name: some_selector_name
+    description: "bla bla"
+    definition:
+      union:
+        - method: tag
+          value: some_tag

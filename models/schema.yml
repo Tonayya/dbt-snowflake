@@ -2,6 +2,8 @@ version: 2
 
 models:
   - name: model_a
+    config:
+      tags: ['some_tag'] 
     columns:
       - name: id
         description: bla
@@ -13,4 +15,3 @@ models:
       - name: id
         tests:
           - not_null
-    
