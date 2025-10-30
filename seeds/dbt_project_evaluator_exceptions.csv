@@ -1,0 +1,3 @@
+fct_name,column_name,id_to_exclude,comment
+fct_model_naming_conventions,resource_name,report_%,report is the used prefix instead of rpt for our project
+fct_model_naming_conventions,resource_name,mart_%,mart is the used prefix instead of fct/dim for our project
