@@ -1,7 +1,67 @@
 selectors:
-  - name: some_selector_name
-    description: "bla bla"
+  - name: skip_views_but_test_views
+    description: >
+      Default selector: runs all models and all tests,
+      but skips materializing views.
+    default: true
     definition:
       union:
-        - method: tag
-          value: some_tag
+        - intersection:
+            - method: path
+              value: "*"
+            - exclude:
+                - method: config.materialized
+                  value: view
+        - method: resource_type
+          value: test
+
+  - name: skip_views_but_test_views_priority
+    description: >
+      Priority selector: runs all models and all tests,
+      but skips materializing views where tag = 'priority'.
+    definition:
+      union:
+        - intersection:
+            - method: tag
+              value: priority
+            - method: path
+              value: "*"
+            - exclude:
+                - method: config.materialized
+                  value: view
+        - intersection:
+            - method: resource_type
+              value: test
+            - method: tag
+              value: priority
+
+  - name: skip_views_but_test_views_secondary
+    description: >
+      Secondary selector: runs all models and all tests,
+      but skips materializing views where tag = 'secondary'.
+    definition:
+      union:
+        - intersection:
+            - method: tag
+              value: secondary
+            - method: path
+              value: "*"
+            - exclude:
+                - method: config.materialized
+                  value: view
+        - intersection:
+            - method: resource_type
+              value: test
+            - method: tag
+              value: secondary
+
+  - name: build_all_views
+    description: >
+      This selector runs every model materialised as view.
+    definition:
+      union:
+        - intersection:
+            - method: path
+              value: "*"
+            - method: config.materialized
+              value: view
