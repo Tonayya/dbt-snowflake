@@ -15,16 +15,12 @@ models:
         description: "Total revenue for the region"
 
     tests:
-      # THIS IS THE PROBLEMATIC TEST
-      # It tries to compare this secondary model against the priority model
-      # But when running in the secondary job, the priority model isn't in the DAG
       - dbt_expectations.expect_table_aggregation_to_equal_other_table:
           arguments:
             expression: sum(total_revenue)
             compare_model: ref('priority_sales_summary')
             tags: ["secondary", "cross_job_test"]
 
-      # Additional test to show the issue
       - dbt_expectations.expect_table_aggregation_to_equal_other_table:
           arguments:
             expression: count(*)
