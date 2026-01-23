@@ -1,9 +1,20 @@
 version: 2
 
+groups:
+  - name: sales
+    owner:
+      name: John Doe
+      email: sales@jaffle.shop
+  - name: marketing
+    owner: 
+      name: Jane Doe
+      email: marketing@jaffle.shop
+
 models:
   - name: priority_sales_summary
     description: "Priority model - Regional sales summary that runs in the priority job"
     config:
+      group: sales
       tags: ['priority']
     columns:
       - name: region
