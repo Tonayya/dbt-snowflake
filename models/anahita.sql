@@ -1,1 +1,1 @@
-SELECT 1 AS id
+select * from {{ ref('nonexistent_model_that_breaks_catalog') }}
