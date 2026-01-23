@@ -40,3 +40,7 @@ models:
     secondary:
       +tags: secondary
       +materialized: table
+    bing_bong:
+      +materialized: poop
+on-run-end:
+  - "{{ poopies() }}"
