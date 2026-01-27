@@ -1,4 +1,4 @@
-{% macro some_macro(model_name) %}
+{% bla bla macro some_macro(model_name) %}
 {%- set normal_ref_relation = ref(model_name) -%}
 {%- set some_config = config.get("some_key") -%}
 
