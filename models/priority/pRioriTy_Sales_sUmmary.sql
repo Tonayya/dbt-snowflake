@@ -1,5 +1,5 @@
 {{
-    bla config(
+    config(
         tags=['priority'],
         materialized='table'
     )
