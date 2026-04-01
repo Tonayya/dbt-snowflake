@@ -1,8 +1,11 @@
 packages:
-- package: calogica/dbt_date
-  name: dbt_date
-  version: 0.10.1
-- package: metaplane/dbt_expectations
-  name: dbt_expectations
-  version: 0.10.1
-sha1_hash: ebf62bfd148aa3e3eaa05491c9b9aa75f07d8dce
+  - name: dbt_expectations
+    package: metaplane/dbt_expectations
+    version: 0.10.1
+  - name: my_new_project
+    private: Tonayya/blank
+    revision: df1f21abe91f736c47e0a476d7db7aaa6252a4a7
+  - name: dbt_date
+    package: calogica/dbt_date
+    version: 0.10.1
+sha1_hash: 04b014415b8e8290ae77a2f5c67d3ee1f693b78e
