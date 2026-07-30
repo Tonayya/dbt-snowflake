@@ -1,0 +1,6 @@
+sources:
+  - name: fake_source
+    database: NONEXISTENT_DB
+    schema: NONEXISTENT_SCHEMA
+    tables:
+      - name: missing_table

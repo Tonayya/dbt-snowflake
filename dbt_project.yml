@@ -40,3 +40,11 @@ models:
     secondary:
       +tags: secondary
       +materialized: table
+
+snapshots:
+  analytics:
+    +query_tag: dbt_snapshot
+    +static_analysis: strict
+
+    subfolder:
+      +static_analysis: baseline
