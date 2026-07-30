@@ -10,7 +10,7 @@
 
 SELECT
     region,
-    COUNT(DISTINCT order_idz) as total_orders,
+    COUNT(DISTINCT order_id) as total_orders,
     COUNT(DISTINCT customer_id) as unique_customers,
     SUM(quantity) as total_quantity,
     SUM(price * quantity) as total_revenue,
