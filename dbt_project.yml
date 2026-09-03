@@ -39,10 +39,14 @@ models:
       +materialized: table
     secondary:
       +tags: secondary
-      +materialized: table
+      +materialized: dynamic_table
+      +on_configuration_change: apply
+    +target_lag: downstream
+    +scheduler: ENABLE
+    +snowflake_warehouse: TRANSFORMING
+    +refresh_mode: ADAPTIVE
 
 snapshots:
-  analytics:
     +query_tag: dbt_snapshot
     +static_analysis: strict
 

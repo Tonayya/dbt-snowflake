@@ -1,7 +1,6 @@
 {{
     config(
-        tags=['secondary'],
-        materialized='table'
+        tags=['secondary']
     )
 }}
 
